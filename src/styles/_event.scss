@@ -1,0 +1,66 @@
+@use 'variables';
+
+.event {
+    padding: 70px 0;
+    background-color: variables.$colorGradient1;
+    
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &--gradient1 {
+        background-image: linear-gradient(to bottom, variables.$colorGradient1, variables.$colorGradient2);
+    }
+
+    &--gradient2 {
+        background-image: linear-gradient(to bottom, variables.$colorGradient2, variables.$colorGradient3);
+    }
+    
+    &--gradient3 {
+        background-image: linear-gradient(to bottom, variables.$colorGradient3, variables.$colorGradient4);
+    }
+
+    &--gradient4 {
+        background-image: linear-gradient(to bottom, variables.$colorGradient4, variables.$colorGradient1);
+    }
+
+    &__item{
+        
+        &__title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__item {
+            margin-bottom: 16px;
+        }
+    }
+}

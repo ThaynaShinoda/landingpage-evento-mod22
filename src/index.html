@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's my birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <img src="images/baralho.jpg" alt="">
-
-    <script src="scripts/main.js"></script>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="images/logo.svg" alt="It's my birthday!">
+            <p class="hero__text">Venha comemorar os meus 30 anos, a festa será realizada em 01d 02h 03m 04s</p>
+            <div class="bar">
+                <ul class="bar__infos">
+                    <li class="bar__infos__item">
+                        <b>Local</b>
+                        Rua Parcel, 1234 - São Paulo - SP
+                    </li>
+                    <li class="bar__infos__item">
+                        <b>Data</b>
+                        07/09/2025
+                    </li>
+                    <li class="bar__infos__item">
+                        <b>Horário</b>
+                        A partir das 18 horas
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirme sua presença</a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

@@ -1,4 +1,3 @@
-AOS.init();
 
 //Data do evento
 const eventDate = new Date ("Sep 7, 2025 18:00:00")
